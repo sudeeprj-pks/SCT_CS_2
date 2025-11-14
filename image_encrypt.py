@@ -23,7 +23,7 @@ def decrypt_image(input_path, output_path, key):
     for i in range(img.size[0]):
         for j in range(img.size[1]):
             r, g, b = pixels[i, j]
-            # Reverse the encryption
+            
             r = (r - key) % 256
             g = (g - key) % 256
             b = (b - key) % 256
