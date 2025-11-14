@@ -14,7 +14,7 @@ def encrypt_image(input_path, output_path, key):
             pixels[i, j] = (r, g, b)
 
     img.save(output_path)
-    print(f"✅ Image encrypted successfully as {output_path}")
+    print(f" Image encrypted successfully as {output_path}")
 
 def decrypt_image(input_path, output_path, key):
     img = Image.open(input_path)
@@ -30,7 +30,7 @@ def decrypt_image(input_path, output_path, key):
             pixels[i, j] = (r, g, b)
 
     img.save(output_path)
-    print(f"✅ Image decrypted successfully as {output_path}")
+    print(f" Image decrypted successfully as {output_path}")
 
 # Example usage
 if __name__ == "__main__":
@@ -45,4 +45,4 @@ if __name__ == "__main__":
     elif choice == 'd':
         decrypt_image(input_path, output_path, key)
     else:
-        print("❌ Invalid choice!")
+        print(" Invalid choice!")
